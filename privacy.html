@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Kalan Gizlilik Politikası</title>
+<style>
+:root{--bg:#fff;--fg:#1c1c1e;--muted:#6b6b70;--line:#e5e5ea;--accent:#0a64c8;--card:#f5f5f7}
+@media (prefers-color-scheme:dark){:root{--bg:#000;--fg:#f2f2f7;--muted:#a1a1a6;--line:#2c2c2e;--accent:#6cb2ff;--card:#1c1c1e}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-text-size-adjust:100%}
+main{max-width:720px;margin:0 auto;padding:32px 20px 64px}
+nav{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:.9rem;margin-bottom:24px}
+h1{font-size:1.9rem;line-height:1.2;margin:0 0 .25em}
+h2{font-size:1.3rem;margin:2em 0 .5em;padding-top:.5em;border-top:1px solid var(--line)}
+h3{font-size:1.05rem;margin:1.5em 0 .4em}
+p,li{overflow-wrap:anywhere}
+a{color:var(--accent)}
+.meta{color:var(--muted);font-size:.9rem;margin:0 0 1.5em}
+ul{padding-left:1.3em}
+li{margin:.3em 0}
+.tablewrap{overflow-x:auto;margin:1em 0}
+table{border-collapse:collapse;width:100%;min-width:520px;font-size:.92rem}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:var(--card)}
+</style>
+</head>
+<body>
+<main>
+<nav>
+<a href="index.html">Ana sayfa</a>
+<a href="support.html">Destek</a>
+<a href="privacy-en.html" hreflang="en" lang="en">English</a>
+</nav>
+
+<h1>Kalan Gizlilik Politikası</h1>
+<p class="meta">Yürürlük tarihi: <time>GG Ay YYYY</time></p>
+
+<h2>1. Kısaca</h2>
+<ul>
+<li>Gelir, gider, plan, bütçe ve borç kayıtların senin cihazında ve senin kendi iCloud hesabında durur. Geliştiricinin bu kayıtları tutan bir sunucusu ya da hesabı yoktur; geliştirici onlara erişemez ve onları toplamaz.</li>
+<li>Kalan'ın kullanıcı hesabı ya da oturum açma ekranı yoktur.</li>
+<li>Uygulama çöktüğünde, sorunu düzeltebilmek için Google'ın Firebase Crashlytics hizmetine teknik bir çökme raporu gönderilir. Rapora tutar, açıklama ya da hesap adı eklenmez.</li>
+<li>Kurlar için üçüncü taraf bir hizmete (Frankfurter) yalnızca para birimi kodları ve tarih gönderilir.</li>
+<li>Kalan reklam göstermez, seni izlemez ve kullanım analizi aracı içermez.</li>
+</ul>
+
+<h2>2. Veri sorumlusu ve iletişim</h2>
+<p>Kalan'ı Yağız Savran geliştirir ve yayımlar. Bu politikada "geliştirici" ve "veri sorumlusu" ifadeleri ona karşılık gelir.</p>
+<p>İletişim ve başvurular: <a href="mailto:savranyagiz@gmail.com">savranyagiz@gmail.com</a></p>
+
+<h2>3. Hangi verilere ne olur</h2>
+
+<h3>3.1 Finansal kayıtların</h3>
+<p>Gelir, gider, plan, bütçe, hesap, kart ve borç/taksit kayıtların; hesap ve kategori adların ve yazdığın açıklamalar cihazında saklanır. Geliştiriciye gönderilmez ve geliştirici tarafından toplanmaz. Kalan'ın bu kayıtları alan bir sunucusu yoktur.</p>
+
+<h3>3.2 iCloud eşitlemesi</h3>
+<p>iCloud kullanılabiliyorsa kayıtların, Apple'ın CloudKit hizmeti üzerinden yalnızca kendi iCloud hesabındaki cihazlarınla eşitlenir. Bu veri senin iCloud hesabında durur (geliştiricinin iCloud hesabında ya da sunucusunda değil) ve Apple'ın hizmetlerinde işlenir; geliştirici ona erişemez. Eşitleme varsayılan olarak açıktır ve otomatik çalışır; anlık olması garanti edilmez. Ayarlar'daki "iCloud eşitlemesi" anahtarıyla eşitlemeyi duraklatabilirsin. Duraklatmak iCloud'daki kayıtlarını silmez. Bu anahtar tanılama verisinin gönderimini etkilemez.</p>
+
+<h3>3.3 Hata tanılama (Firebase Crashlytics)</h3>
+<p>Kalan çöktüğünde, sorunu bulup düzeltebilmek için Google'ın Firebase Crashlytics hizmetine bir çökme raporu gönderilir. Raporda uygulama sürümü, cihaz modeli, iOS sürümü ve çökmenin teknik ayrıntıları gibi bilgiler bulunur. Hizmet ayrıca uygulama kurulumuna özgü teknik tanımlayıcılar ve oturum/cihaz olayları kullanabilir; her internet isteğinde olduğu gibi Google'ın sunucuları bağlantı IP adresini teknik olarak görebilir. Hizmetin topladığı verilerin tam listesi ve işlenmesi Google'ın belgelerinde ve politikasında anlatılır (bkz. bölüm 5).</p>
+<p>Tanılama verisine işlem tutarları, açıklamalar, borç bilgileri, hesap adları, limitler, bakiyeler, dışa aktardığın dosyaların içeriği ve senin yazdığın etiketler eklenmez.</p>
+<p>Tanılama gönderimi varsayılan olarak açıktır ve uygulama içinden kapatılamaz.</p>
+<p>Kalan, Google Analytics'i ya da başka bir kullanım analizi aracını içermez.</p>
+
+<h3>3.4 Kur bilgisi</h3>
+<p>Farklı para birimlerindeki kayıtları göstermek için kurlar, Avrupa Merkez Bankası günlük referans kurlarını sunan Frankfurter adlı üçüncü taraf bir hizmetten alınır. Bilgimize göre hizmet Cloudflare altyapısı üzerinden sunulur. İnternetteki her istekte olduğu gibi bu hizmet cihazının IP adresini görebilir; hizmet, IP adreslerini saklamadığını beyan eder (bu beyanı geliştirici bağımsız olarak doğrulamamıştır).</p>
+<p>Kalan'ın kur isteğinde tutar, açıklama ya da kimlik bilgisi gönderilmez; yalnızca para birimi kodları ve gerekli tarihler gider. Tüm kayıtların ve gösterim biriminin hesap biriminle aynıysa kur gerekmez ve istek yapılmaz. Kurlar referans kurdur; banka kuru değildir.</p>
+
+<h3>3.5 Kalan Pro aboneliği</h3>
+<p>Satın alma ve ödeme Apple tarafından yürütülür. Ödeme bilgilerin ve Apple Hesabı bilgilerin geliştiriciye iletilmez. Kalan, aboneliğinin etkin olup olmadığını cihazında Apple'ın StoreKit çerçevesi üzerinden okur. Geliştirici, Apple'ın App Store Connect üzerinden sunduğu satış ve abonelik raporlarını görebilir; Kalan bu raporlara kendi başına bilgi eklemez.</p>
+
+<h3>3.6 Bildirimler ve dışa aktarma</h3>
+<p>Hatırlatmalar cihazında planlanır ve varsayılan olarak tutar içermez. Kalan bildirim iznini ancak bir hatırlatmayı açtığında ister.</p>
+<p>PDF ve CSV dosyaları cihazında üretilir; Kalan bunları saklamaz ve eşitlemez. Dosyayı kime ve nereye paylaşacağına sen karar verirsin.</p>
+
+<h3>3.7 Toplamadıklarımız</h3>
+<p>Kalan'da kullanıcı hesabı, e-posta ya da şifre yoktur. Kalan reklam göstermez, kullanıcıyı uygulamalar ve siteler arasında izlemez, kişisel veri satmaz.</p>
+
+<h2>4. İşleme amaçları ve hukuki sebepler</h2>
+<div class="tablewrap">
+<table>
+<thead><tr><th>Veri</th><th>Amaç</th><th>Hukuki sebep</th></tr></thead>
+<tbody>
+<tr><td>Finansal kayıtlar (cihaz ve iCloud)</td><td>Uygulamayı çalıştırmak, Kalan tutarını hesaplamak, cihazlar arasında eşitlemek</td><td>Geliştirici bu veriyi toplamaz ya da işlemez; veri senin cihazında ve senin iCloud hesabında durur. Eşitlemeyi sen kontrol edersin.</td></tr>
+<tr><td>Çökme raporu (Crashlytics)</td><td>Hataları bulup düzeltmek, uygulamanın kararlılığını sağlamak</td><td>Meşru menfaat (KVKK m.5/2-f; GDPR m.6/1-f): ürünü güvenilir tutmak. Raporda finansal kayıt içeriği yoktur.</td></tr>
+<tr><td>Kur isteği (IP, para birimi kodu, tarih)</td><td>Farklı para birimlerindeki tutarları referans kurla göstermek</td><td>Sözleşmenin ifası (GDPR m.6/1-b; KVKK m.5/2-c): istediğin özelliği sağlamak.</td></tr>
+<tr><td>Abonelik durumu</td><td>Kalan Pro özelliklerini açmak</td><td>Sözleşmenin ifası; satın almayı Apple yürütür.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>5. Üçüncü taraflar ve yurt dışına aktarım</h2>
+<p>Kalan'ı kullanırken veriler şu hizmetlerce işlenir. Üçü de yurt dışında bulunan hizmetlerdir; bu nedenle ilgili veriler Türkiye dışına aktarılabilir.</p>
+<ul>
+<li><strong>Apple Inc.</strong> — iCloud/CloudKit (eşitleme), App Store ve abonelik. Apple'ın gizlilik politikası: <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></li>
+<li><strong>Google LLC (Firebase Crashlytics)</strong> — çökme raporları. Saklama süresi, işleme ve aktarım güvenceleri için Google'ın belgeleri: <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></li>
+<li><strong>Frankfurter ve altyapı sağlayıcısı Cloudflare</strong> — kur bilgisi. Frankfurter: <a href="https://frankfurter.dev">frankfurter.dev</a>; Cloudflare gizlilik politikası: <a href="https://www.cloudflare.com/privacypolicy/">cloudflare.com/privacypolicy</a></li>
+</ul>
+<p>Geliştirici bu hizmetlere kişisel finans verini göndermez. Yurt dışı aktarım, bu hizmetlerin kendi sorumluluğundaki işleme koşullarına ve ilgili mevzuatın aradığı güvencelere tabidir. Kişisel veri satılmaz ve reklam amacıyla paylaşılmaz.</p>
+
+<h2>6. Saklama ve silme</h2>
+<ul>
+<li><strong>Cihazdaki ve iCloud'daki kayıtların:</strong> Sen silene kadar durur. Ayarlar'daki <strong>"Tüm verilerimi sil"</strong> seçeneği, senin bu cihazdaki kayıtlarını ve senin iCloud hesabındaki Kalan verisini siler; eşitlenen diğer cihazlar da silmeyi alır. Bu işlem geri alınamaz. Diğer cihazların silmeyi ne zaman alacağı garanti edilmez. Silme, Kalan Pro aboneliğini iptal etmez; abonelik Apple'dadır. Görünüm, dil ve bildirim tercihleri gibi cihaz ayarları silmeden etkilenmez.</li>
+<li><strong>Uygulamayı kaldırırsan:</strong> Cihazdaki kopya silinir; iCloud'daki kopya kalır. iCloud'daki veriyi de silmek istiyorsan uygulamayı kaldırmadan önce "Tüm verilerimi sil"i kullan ya da iPhone Ayarları'ndaki iCloud depolama yönetiminden Kalan verisini sil.</li>
+<li><strong>Çökme raporları:</strong> Google'ın Firebase Crashlytics hizmetinde tutulur. Saklama süresi Google'ın politikasına bağlıdır (bölüm 5'teki bağlantı). Geliştirici sana ait bir raporun silinmesini isteyemeyebilir, çünkü raporlar seni adınla ya da hesabınla ilişkilendirmez; yine de bir talebin varsa bize yaz.</li>
+<li><strong>Kur isteği:</strong> Geliştirici kur isteğindeki IP adresini saklamaz. Kalan, indirilen kurları cihazında önbellekte tutar; "Tüm verilerimi sil" bu önbelleği de siler.</li>
+<li><strong>Abonelik kayıtları:</strong> Apple'da tutulur ve Apple'ın politikasına tabidir.</li>
+</ul>
+
+<h2>7. Haklarını kullanma ve başvuru</h2>
+<p>Kişisel verilerine ilişkin olarak, yürürlükteki mevzuat uyarınca (KVKK m.11; AB/AEA'daysan GDPR m.15–22) şu haklara sahipsin:</p>
+<ul>
+<li>Verilerinin işlenip işlenmediğini öğrenme ve işlenmişse bilgi isteme,</li>
+<li>İşlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme,</li>
+<li>Yurt içinde ya da yurt dışında aktarıldığı üçüncü kişileri bilme,</li>
+<li>Eksik ya da yanlış işlenmişse düzeltilmesini isteme,</li>
+<li>Silinmesini ya da yok edilmesini isteme,</li>
+<li>İşlemeye itiraz etme; rızana dayanan işlemlerde rızanı geri çekme,</li>
+<li>AB/AEA'daysan verilerinin taşınmasını (taşınabilirlik) ve işlemenin sınırlandırılmasını isteme,</li>
+<li>Zarara uğraman hâlinde zararın giderilmesini talep etme.</li>
+</ul>
+<p>Kalan'ın finansal kayıtların geliştiricide bulunmadığı için bu kayıtlarla ilgili hakların çoğunu doğrudan uygulamadan kullanırsın: düzenle, sil ya da "Tüm verilerimi sil"i kullan. Diğer talepler için <a href="mailto:savranyagiz@gmail.com">savranyagiz@gmail.com</a> adresine yaz. Talebinde ne istediğini ve seni yanıtlayabileceğimiz e-posta adresini belirt; finansal tutar, hesap bilgisi ya da başka hassas veri gönderme. Başvurunu, niteliğine göre en geç 30 gün (KVKK m.13) içinde, GDPR kapsamında en geç bir ay içinde yanıtlarız. Kimliğini doğrulamak için ek bilgi isteyebiliriz.</p>
+<p>Yanıttan memnun kalmazsan Türkiye'de Kişisel Verileri Koruma Kurulu'na (<a href="https://www.kvkk.gov.tr">kvkk.gov.tr</a>), AB/AEA'da yerleşik olduğun ülkenin veri koruma otoritesine şikâyette bulunabilirsin.</p>
+
+<h2>8. Çocuklar</h2>
+<p>Kalan çocuklara yönelik değildir. Finansal kayıtlar geliştiriciye hiç gönderilmediği için çocuklara ait kişisel veri toplanmaz.</p>
+
+<h2>9. Güvenlik</h2>
+<p>Kayıtların senin cihazında Apple'ın sistem korumalarıyla, senin iCloud hesabında ise Apple'ın güvenlik önlemleriyle durur. Kur ve tanılama istekleri şifreli bağlantı (HTTPS) üzerinden yapılır. İnternet üzerinden hiçbir aktarım ve hiçbir saklama yöntemi mutlak güvenlik sağlayamaz.</p>
+
+<h2>10. Değişiklikler</h2>
+<p>Uygulamanın veri kullanımı değişirse bu politikayı güncelleriz ve sayfanın başındaki yürürlük tarihini değiştiririz. Anlamlı bir değişiklikte, uygulama güncellemesinin "Yenilikler" notunda da belirtiriz.</p>
+
+<h2>11. İletişim</h2>
+<p>Yağız Savran — <a href="mailto:savranyagiz@gmail.com">savranyagiz@gmail.com</a></p>
+</main>
+</body>
+</html>

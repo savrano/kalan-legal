@@ -35,7 +35,7 @@ th{background:var(--card)}
 </nav>
 
 <h1>Kalan Privacy Policy</h1>
-<p class="meta">Effective date: <time>DD Month YYYY</time></p>
+<p class="meta">Effective date: <time datetime="2026-10-19">October 19, 2026</time></p>
 
 <h2>1. In short</h2>
 <ul>
@@ -43,7 +43,9 @@ th{background:var(--card)}
 <li>Kalan has no user account or sign-in.</li>
 <li>When the app crashes, a technical crash report is sent to Google's Firebase Crashlytics service so the problem can be fixed. The report doesn't include amounts, descriptions, or account names.</li>
 <li>For exchange rates, only currency codes and dates are sent to a third-party service (Frankfurter).</li>
+<li>Notifications are scheduled on your device and don't include amounts.</li>
 <li>Kalan doesn't show ads, doesn't track you, and doesn't include a usage analytics tool.</li>
+<li>You can delete your Kalan data with "Delete all my data" in Settings. Section 6 explains what is and isn't deleted.</li>
 </ul>
 
 <h2>2. Data controller and contact</h2>
@@ -56,23 +58,25 @@ th{background:var(--card)}
 <p>Your income, expense, plan, budget, account, card, and debt/installment records, your account and category names, and the descriptions you write are stored on your device. They aren't sent to the developer or collected by the developer. Kalan has no server that receives these records.</p>
 
 <h3>3.2 iCloud sync</h3>
-<p>When iCloud is available, your records sync through Apple's CloudKit service, only with the devices signed in to your own iCloud account. This data stays in your iCloud account (not in the developer's iCloud account or on a developer's server) and is processed by Apple's services; the developer can't access it. Sync is on by default and runs automatically; it isn't guaranteed to be instant. You can pause it with the "iCloud sync" switch in Settings. Pausing doesn't delete your records in iCloud. This switch doesn't affect whether diagnostic data is sent.</p>
+<p>With Kalan Pro, when iCloud is available, your records sync through Apple's CloudKit service, only with the devices signed in to your own iCloud account. This data stays in your iCloud account (not in the developer's iCloud account or on a developer's server) and is processed by Apple's services; the developer can't access it. Sync is on by default and runs automatically; it isn't guaranteed to be instant. You can pause it with the "iCloud sync" switch in Settings. Pausing doesn't delete your records in iCloud. This switch doesn't affect whether diagnostic data is sent.</p>
+<p>Kalan Basic has no sync; your records stay only on your device. The iCloud copy of records that synced while you were on Kalan Pro stays in your iCloud account until you delete it. On Kalan Basic you can delete this copy in the app with "Delete all my data" on a device that synced before, or with Kalan Pro (section 6).</p>
 
 <h3>3.3 Error diagnostics (Firebase Crashlytics)</h3>
-<p>When Kalan crashes, a crash report is sent to Google's Firebase Crashlytics service so the problem can be found and fixed. The report includes information such as the app version, device model, iOS version, and the technical details of the crash. The service may also use technical identifiers specific to the app installation and session/device events, and, as with any internet request, Google's servers can technically see the connection's IP address. The full list of what the service collects and how it is processed is described in Google's documentation and policy (see section 5).</p>
+<p>When Kalan crashes, a crash report is sent to Google's Firebase Crashlytics service so the problem can be found and fixed. The report includes information such as the app version, device model, iOS version, and the technical details of the crash (for example, the stack trace). The service may also use technical identifiers specific to the app installation (a Crashlytics/Firebase installation ID) and session/device events, and, as with any internet request, Google's servers can technically see the connection's IP address. The full list of what the service collects and how it is processed is described in Google's documentation and policy (see section 5).</p>
 <p>Transaction amounts, descriptions, debt information, account names, limits, balances, the contents of files you export, and labels you write are never added to diagnostic data.</p>
 <p>Diagnostic reporting is on by default and can't be turned off inside the app.</p>
 <p>Kalan doesn't include Google Analytics or any other usage analytics tool.</p>
 
 <h3>3.4 Exchange rates</h3>
-<p>To show records in different currencies, rates come from Frankfurter, a third-party service that provides the European Central Bank's daily reference rates. To our knowledge, the service is delivered through Cloudflare infrastructure. As with any internet request, this service can see your device's IP address; the service states that it doesn't store IP addresses (the developer hasn't independently verified this statement).</p>
+<p>To show records in different currencies, rates come from Frankfurter, a third-party service that provides the European Central Bank's daily reference rates. A rate request can be made while the app is open or during a background refresh that iOS allows. To our knowledge, the service is delivered through Cloudflare infrastructure. As with any internet request, this service can see your device's IP address; the service states that it doesn't store IP addresses (the developer hasn't independently verified this statement).</p>
 <p>Kalan's rate request doesn't include amounts, descriptions, or identity; only currency codes and the dates needed are sent. If all your records and your display currency match your account currency, no rate is needed and no request is made. Rates are reference rates, not bank rates.</p>
 
 <h3>3.5 Kalan Pro subscription</h3>
 <p>Purchases and payments are handled by Apple. Your payment details and Apple Account details aren't passed to the developer. Kalan reads whether your subscription is active on your device through Apple's StoreKit framework. The developer can see the sales and subscription reports that Apple provides through App Store Connect; Kalan doesn't add information to those reports on its own.</p>
 
 <h3>3.6 Notifications and export</h3>
-<p>Reminders are scheduled on your device and don't include amounts by default. Kalan asks for notification permission only when you turn on a reminder.</p>
+<p>Notifications are scheduled and shown on your device. The developer has no server that sends notifications, and no account or device identifier is collected for them. Kalan can notify you about plan reminders (a day before and on the due day), a card's last-payment reminder, a weekly summary if you have overdue payments, and, if your subscription's auto-renewal is off, a reminder the day before Kalan Pro ends. Notifications don't include amounts, descriptions, or labels; a card's last-payment reminder may include the card's name. Whether a notification appears on your lock screen is controlled by your iOS settings.</p>
+<p>Kalan doesn't ask for notification permission during onboarding. It asks only when you turn on a plan reminder or tap "Allow" in the form, save a card with its last-payment reminder on, turn on the weekly summary in Settings, or tap "Allow" there. If you don't allow it, the rest of Kalan keeps working. You change reminder and weekly summary preferences in Settings; the permission itself lives in iOS Settings.</p>
 <p>PDF and CSV files are generated on your device; Kalan doesn't store or sync them. You decide who receives a file and where it goes.</p>
 
 <h3>3.7 What we don't collect</h3>
@@ -92,7 +96,7 @@ th{background:var(--card)}
 </div>
 
 <h2>5. Third parties and international transfers</h2>
-<p>When you use Kalan, data is processed by the following services. All three operate outside Turkey, and some of them outside the EU/EEA, so related data may be transferred internationally.</p>
+<p>When you use Kalan, data is processed by the following services. All three services operate outside Turkey and may process and store data in various locations worldwide, including the United States and other places outside the EU/EEA, so the related data may be transferred outside Turkey. Frankfurter's processing location isn't published.</p>
 <ul>
 <li><strong>Apple Inc.</strong> — iCloud/CloudKit (sync), App Store and subscriptions. Apple's privacy policy: <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></li>
 <li><strong>Google LLC (Firebase Crashlytics)</strong> — crash reports. For retention, processing, and transfer safeguards, see Google's documentation: <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></li>
@@ -102,26 +106,18 @@ th{background:var(--card)}
 
 <h2>6. Retention and deletion</h2>
 <ul>
-<li><strong>Your records on your device and in your iCloud account:</strong> They stay until you delete them. The <strong>"Delete all my data"</strong> option in Settings deletes your records on this device and the Kalan data in your own iCloud account; your other synced devices receive the deletion too. This can't be undone. When other devices receive the deletion isn't guaranteed. Deleting doesn't cancel your Kalan Pro subscription; the subscription is with Apple. Device settings such as appearance, language, and notification preferences aren't affected by deletion.</li>
-<li><strong>If you delete the app:</strong> The copy on the device is removed; the copy in iCloud remains. To delete the iCloud data too, use "Delete all my data" before removing the app, or delete the Kalan data from iCloud storage management in iPhone Settings.</li>
-<li><strong>Crash reports:</strong> They are held by Google's Firebase Crashlytics service. Retention depends on Google's policy (link in section 5). The developer may not be able to find a report that belongs to you because reports don't link to your name or account; if you have a request, write to us anyway.</li>
+<li><strong>Your records on your device and in your iCloud account:</strong> They stay until you delete them. The <strong>"Delete all my data"</strong> option in Settings deletes the Kalan data on this device (accounts, cards, installments, entries, plans, budgets, categories and subscription types you added, your account currency and display currency, chart layout, the rate cache, form drafts, temporary export files, and Kalan notifications, including Kalan Pro data hidden on Kalan Basic). With Kalan Pro while signed in to iCloud (even if sync is paused), or on Kalan Basic if this device has synced with iCloud before, the Kalan data in your own iCloud account is deleted too, and other devices synced with the same account receive the deletion; when they receive it isn't guaranteed. This can't be undone.</li>
+<li><strong>What "Delete all my data" doesn't cover:</strong> On Kalan Basic, if this device has never synced with iCloud, or no iCloud account has ever been used on this device, only the data on this device is deleted; data in iCloud or on your other devices is not deleted. Records on your other devices that never moved to iCloud aren't deleted either. Kalan data you use with a different Apple Account on this device isn't affected; to delete it, sign in with that account and do it there. Deleting doesn't cancel your Kalan Pro subscription; the subscription is with Apple. Device settings such as appearance, language, the iCloud sync switch, and notification preferences aren't affected by deletion. Crash reports aren't covered either (see below).</li>
+<li><strong>If iCloud can't be reached:</strong> When the iCloud copy must be deleted too and iCloud can't be reached (for example, you're offline or iCloud is off), deletion doesn't start and Kalan doesn't show anything as "deleted". If the process stops at the iCloud step, Kalan tells you what wasn't deleted and offers to try again.</li>
+<li><strong>If you delete the app:</strong> The copy on the device is removed; the copy in iCloud remains. To delete the iCloud data too, use "Delete all my data" before removing the app. You can also review your iCloud storage on iPhone in Settings &gt; [your name] &gt; iCloud, but we can't promise that Kalan's data appears there as a separate item you can delete. The most reliable way to remove the iCloud copy is "Delete all my data" in the app.</li>
+<li><strong>Crash reports:</strong> They are stored in Google's Firebase Crashlytics service, linked to a random Firebase installation ID specific to your installation of the app; according to Google's documentation, they begin to be removed after 90 days. "Delete all my data" doesn't cover these reports or the installation ID; the reports contain no financial data. The developer may not be able to find a report that belongs to you because reports don't link to your name or account.</li>
 <li><strong>Rate requests:</strong> The developer doesn't store the IP address in rate requests. Kalan keeps downloaded rates in a cache on your device; "Delete all my data" clears that cache too.</li>
 <li><strong>Subscription records:</strong> They are held by Apple and are subject to Apple's policy.</li>
 </ul>
 
 <h2>7. Your rights and how to exercise them</h2>
-<p>Under applicable law (KVKK Art. 11; if you are in the EU/EEA, GDPR Arts. 15–22), you have the right to:</p>
-<ul>
-<li>Find out whether your data is processed and request information if it is,</li>
-<li>Learn the purpose of processing and whether it is used accordingly,</li>
-<li>Know the third parties to whom data is transferred, in Turkey or abroad,</li>
-<li>Request correction if it is incomplete or inaccurate,</li>
-<li>Request erasure or destruction,</li>
-<li>Object to processing, and withdraw your consent where processing relies on it,</li>
-<li>If you are in the EU/EEA, request data portability and restriction of processing,</li>
-<li>Request compensation if you suffer damage.</li>
-</ul>
-<p>Because your financial records aren't held by the developer, you exercise most rights over them directly in the app: edit, delete, or use "Delete all my data". For other requests, write to <a href="mailto:savranyagiz@gmail.com">savranyagiz@gmail.com</a>. Say what you are asking for and which email address we can reply to; don't send amounts, account details, or other sensitive data. We reply within 30 days at the latest (KVKK Art. 13), and within one month under GDPR. We may ask for additional information to verify your identity.</p>
+<p>We hold no personal data about you; you manage your data in the app and delete it with "Delete all my data". For questions, write to <a href="mailto:savranyagiz@gmail.com">savranyagiz@gmail.com</a>; we reply within 30 days. When you write, don't send amounts, account details, or other sensitive data.</p>
+<p>Under KVKK Art. 11 and, if you are in the EU/EEA, the GDPR, you have rights such as access, correction, erasure, and objection to processing; you can exercise them through the same email address. Because we can't look up crash reports by person, we may not be able to pick out a report as yours.</p>
 <p>If you are not satisfied with the response, you can complain to the Personal Data Protection Board in Turkey (<a href="https://www.kvkk.gov.tr">kvkk.gov.tr</a>), or to the data protection authority in the country where you live in the EU/EEA.</p>
 
 <h2>8. Children</h2>

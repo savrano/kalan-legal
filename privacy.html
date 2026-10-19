@@ -35,7 +35,7 @@ th{background:var(--card)}
 </nav>
 
 <h1>Kalan Gizlilik Politikası</h1>
-<p class="meta">Yürürlük tarihi: <time>GG Ay YYYY</time></p>
+<p class="meta">Yürürlük tarihi: <time datetime="2026-10-19">19 Ekim 2026</time></p>
 
 <h2>1. Kısaca</h2>
 <ul>
@@ -43,7 +43,9 @@ th{background:var(--card)}
 <li>Kalan'ın kullanıcı hesabı ya da oturum açma ekranı yoktur.</li>
 <li>Uygulama çöktüğünde, sorunu düzeltebilmek için Google'ın Firebase Crashlytics hizmetine teknik bir çökme raporu gönderilir. Rapora tutar, açıklama ya da hesap adı eklenmez.</li>
 <li>Kurlar için üçüncü taraf bir hizmete (Frankfurter) yalnızca para birimi kodları ve tarih gönderilir.</li>
+<li>Bildirimler cihazında planlanır; tutar içermez.</li>
 <li>Kalan reklam göstermez, seni izlemez ve kullanım analizi aracı içermez.</li>
+<li>Ayarlar'daki "Tüm verilerimi sil" ile Kalan verilerini silebilirsin. Neyin silinip neyin silinmediği bölüm 6'dadır.</li>
 </ul>
 
 <h2>2. Veri sorumlusu ve iletişim</h2>
@@ -56,23 +58,25 @@ th{background:var(--card)}
 <p>Gelir, gider, plan, bütçe, hesap, kart ve borç/taksit kayıtların; hesap ve kategori adların ve yazdığın açıklamalar cihazında saklanır. Geliştiriciye gönderilmez ve geliştirici tarafından toplanmaz. Kalan'ın bu kayıtları alan bir sunucusu yoktur.</p>
 
 <h3>3.2 iCloud eşitlemesi</h3>
-<p>iCloud kullanılabiliyorsa kayıtların, Apple'ın CloudKit hizmeti üzerinden yalnızca kendi iCloud hesabındaki cihazlarınla eşitlenir. Bu veri senin iCloud hesabında durur (geliştiricinin iCloud hesabında ya da sunucusunda değil) ve Apple'ın hizmetlerinde işlenir; geliştirici ona erişemez. Eşitleme varsayılan olarak açıktır ve otomatik çalışır; anlık olması garanti edilmez. Ayarlar'daki "iCloud eşitlemesi" anahtarıyla eşitlemeyi duraklatabilirsin. Duraklatmak iCloud'daki kayıtlarını silmez. Bu anahtar tanılama verisinin gönderimini etkilemez.</p>
+<p>Kalan Pro ile, iCloud kullanılabiliyorsa kayıtların, Apple'ın CloudKit hizmeti üzerinden yalnızca kendi iCloud hesabındaki cihazlarınla eşitlenir. Bu veri senin iCloud hesabında durur (geliştiricinin iCloud hesabında ya da sunucusunda değil) ve Apple'ın hizmetlerinde işlenir; geliştirici ona erişemez. Eşitleme varsayılan olarak açıktır ve otomatik çalışır; anlık olması garanti edilmez. Ayarlar'daki "iCloud eşitlemesi" anahtarıyla eşitlemeyi duraklatabilirsin. Duraklatmak iCloud'daki kayıtlarını silmez. Bu anahtar tanılama verisinin gönderimini etkilemez.</p>
+<p>Kalan Basic'te eşitleme yoktur; kayıtların yalnızca cihazında durur. Kalan Pro'dayken eşitlenmiş kayıtların iCloud'daki kopyası, sen silene kadar senin iCloud hesabında kalır. Kalan Basic'te bu kopyayı uygulama içinden, daha önce eşitlenmiş bir cihazda "Tüm verilerimi sil" ile ya da Kalan Pro ile silebilirsin (bölüm 6).</p>
 
 <h3>3.3 Hata tanılama (Firebase Crashlytics)</h3>
-<p>Kalan çöktüğünde, sorunu bulup düzeltebilmek için Google'ın Firebase Crashlytics hizmetine bir çökme raporu gönderilir. Raporda uygulama sürümü, cihaz modeli, iOS sürümü ve çökmenin teknik ayrıntıları gibi bilgiler bulunur. Hizmet ayrıca uygulama kurulumuna özgü teknik tanımlayıcılar ve oturum/cihaz olayları kullanabilir; her internet isteğinde olduğu gibi Google'ın sunucuları bağlantı IP adresini teknik olarak görebilir. Hizmetin topladığı verilerin tam listesi ve işlenmesi Google'ın belgelerinde ve politikasında anlatılır (bkz. bölüm 5).</p>
+<p>Kalan çöktüğünde, sorunu bulup düzeltebilmek için Google'ın Firebase Crashlytics hizmetine bir çökme raporu gönderilir. Raporda uygulama sürümü, cihaz modeli, iOS sürümü ve çökmenin teknik ayrıntıları (ör. hatanın yığın izi) gibi bilgiler bulunur. Hizmet ayrıca uygulama kurulumuna özgü teknik tanımlayıcılar (Crashlytics/Firebase kurulum kimliği) ve oturum/cihaz olayları kullanabilir; her internet isteğinde olduğu gibi Google'ın sunucuları bağlantı IP adresini teknik olarak görebilir. Hizmetin topladığı verilerin tam listesi ve işlenmesi Google'ın belgelerinde ve politikasında anlatılır (bkz. bölüm 5).</p>
 <p>Tanılama verisine işlem tutarları, açıklamalar, borç bilgileri, hesap adları, limitler, bakiyeler, dışa aktardığın dosyaların içeriği ve senin yazdığın etiketler eklenmez.</p>
 <p>Tanılama gönderimi varsayılan olarak açıktır ve uygulama içinden kapatılamaz.</p>
 <p>Kalan, Google Analytics'i ya da başka bir kullanım analizi aracını içermez.</p>
 
 <h3>3.4 Kur bilgisi</h3>
-<p>Farklı para birimlerindeki kayıtları göstermek için kurlar, Avrupa Merkez Bankası günlük referans kurlarını sunan Frankfurter adlı üçüncü taraf bir hizmetten alınır. Bilgimize göre hizmet Cloudflare altyapısı üzerinden sunulur. İnternetteki her istekte olduğu gibi bu hizmet cihazının IP adresini görebilir; hizmet, IP adreslerini saklamadığını beyan eder (bu beyanı geliştirici bağımsız olarak doğrulamamıştır).</p>
+<p>Farklı para birimlerindeki kayıtları göstermek için kurlar, Avrupa Merkez Bankası günlük referans kurlarını sunan Frankfurter adlı üçüncü taraf bir hizmetten alınır. Kur isteği uygulama açıkken ya da iOS'un izin verdiği arka plan yenilemesi sırasında yapılabilir. Bilgimize göre hizmet Cloudflare altyapısı üzerinden sunulur. İnternetteki her istekte olduğu gibi bu hizmet cihazının IP adresini görebilir; hizmet, IP adreslerini saklamadığını beyan eder (bu beyanı geliştirici bağımsız olarak doğrulamamıştır).</p>
 <p>Kalan'ın kur isteğinde tutar, açıklama ya da kimlik bilgisi gönderilmez; yalnızca para birimi kodları ve gerekli tarihler gider. Tüm kayıtların ve gösterim biriminin hesap biriminle aynıysa kur gerekmez ve istek yapılmaz. Kurlar referans kurdur; banka kuru değildir.</p>
 
 <h3>3.5 Kalan Pro aboneliği</h3>
 <p>Satın alma ve ödeme Apple tarafından yürütülür. Ödeme bilgilerin ve Apple Hesabı bilgilerin geliştiriciye iletilmez. Kalan, aboneliğinin etkin olup olmadığını cihazında Apple'ın StoreKit çerçevesi üzerinden okur. Geliştirici, Apple'ın App Store Connect üzerinden sunduğu satış ve abonelik raporlarını görebilir; Kalan bu raporlara kendi başına bilgi eklemez.</p>
 
 <h3>3.6 Bildirimler ve dışa aktarma</h3>
-<p>Hatırlatmalar cihazında planlanır ve varsayılan olarak tutar içermez. Kalan bildirim iznini ancak bir hatırlatmayı açtığında ister.</p>
+<p>Bildirimler cihazında planlanır ve cihazında gösterilir. Geliştiricinin bildirim gönderen bir sunucusu yoktur, bildirimler için hesap ya da cihaz kimliği toplanmaz. Kalan; plan hatırlatmalarını (bir gün önce ve vade günü), kartların son ödeme hatırlatmasını, gecikmiş ödemelerin varsa haftalık bir özeti ve aboneliğin otomatik yenilemesi kapalıysa Kalan Pro bitişinden bir gün önce bir hatırlatma bildirebilir. Bildirimler tutar, açıklama ya da etiket içermez; kartın son ödeme hatırlatmasında kartın adı yer alabilir. Bildirimin kilit ekranında görünmesini iOS ayarların belirler.</p>
+<p>Kalan bildirim iznini onboarding'de istemez. Bunu yalnızca bir plan hatırlatmasını açtığında ya da formdaki "İzin ver"e dokunduğunda, son ödeme hatırlatması açık bir kartı kaydettiğinde, Ayarlar'da haftalık özeti açtığında ya da "İzin ver"e dokunduğunda ister. İzin vermezsen Kalan'ın diğer özellikleri çalışmaya devam eder. Hatırlatma ve haftalık özet tercihleri Ayarlar'dan değiştirilir; iznin kendisi iOS Ayarları'ndadır.</p>
 <p>PDF ve CSV dosyaları cihazında üretilir; Kalan bunları saklamaz ve eşitlemez. Dosyayı kime ve nereye paylaşacağına sen karar verirsin.</p>
 
 <h3>3.7 Toplamadıklarımız</h3>
@@ -92,7 +96,7 @@ th{background:var(--card)}
 </div>
 
 <h2>5. Üçüncü taraflar ve yurt dışına aktarım</h2>
-<p>Kalan'ı kullanırken veriler şu hizmetlerce işlenir. Üçü de yurt dışında bulunan hizmetlerdir; bu nedenle ilgili veriler Türkiye dışına aktarılabilir.</p>
+<p>Kalan'ı kullanırken veriler şu hizmetlerce işlenir. Bu üç hizmet de Türkiye dışında faaliyet gösterir ve verileri dünyanın çeşitli yerlerinde, ABD dahil AB/AEA dışında da işleyip saklayabilir; bu nedenle ilgili veriler Türkiye dışına aktarılabilir. Frankfurter'ın işleme konumu yayımlanmamıştır.</p>
 <ul>
 <li><strong>Apple Inc.</strong> — iCloud/CloudKit (eşitleme), App Store ve abonelik. Apple'ın gizlilik politikası: <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></li>
 <li><strong>Google LLC (Firebase Crashlytics)</strong> — çökme raporları. Saklama süresi, işleme ve aktarım güvenceleri için Google'ın belgeleri: <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></li>
@@ -102,26 +106,18 @@ th{background:var(--card)}
 
 <h2>6. Saklama ve silme</h2>
 <ul>
-<li><strong>Cihazdaki ve iCloud'daki kayıtların:</strong> Sen silene kadar durur. Ayarlar'daki <strong>"Tüm verilerimi sil"</strong> seçeneği, senin bu cihazdaki kayıtlarını ve senin iCloud hesabındaki Kalan verisini siler; eşitlenen diğer cihazlar da silmeyi alır. Bu işlem geri alınamaz. Diğer cihazların silmeyi ne zaman alacağı garanti edilmez. Silme, Kalan Pro aboneliğini iptal etmez; abonelik Apple'dadır. Görünüm, dil ve bildirim tercihleri gibi cihaz ayarları silmeden etkilenmez.</li>
-<li><strong>Uygulamayı kaldırırsan:</strong> Cihazdaki kopya silinir; iCloud'daki kopya kalır. iCloud'daki veriyi de silmek istiyorsan uygulamayı kaldırmadan önce "Tüm verilerimi sil"i kullan ya da iPhone Ayarları'ndaki iCloud depolama yönetiminden Kalan verisini sil.</li>
-<li><strong>Çökme raporları:</strong> Google'ın Firebase Crashlytics hizmetinde tutulur. Saklama süresi Google'ın politikasına bağlıdır (bölüm 5'teki bağlantı). Geliştirici sana ait bir raporun silinmesini isteyemeyebilir, çünkü raporlar seni adınla ya da hesabınla ilişkilendirmez; yine de bir talebin varsa bize yaz.</li>
+<li><strong>Cihazdaki ve iCloud'daki kayıtların:</strong> Sen silene kadar durur. Ayarlar'daki <strong>"Tüm verilerimi sil"</strong> seçeneği bu cihazdaki Kalan verisini (hesaplar, kartlar, taksitler, kayıtlar, planlar, bütçeler, eklediğin kategoriler ve abonelik türleri, hesap birimi ve gösterim birimi, grafik düzeni, kur önbelleği, form taslakları, dışa aktarmanın geçici dosyaları ve Kalan bildirimleri; Kalan Basic'te gizlenmiş Kalan Pro verisi dahil) siler. Kalan Pro'da iCloud'a giriş yapılmışsa (eşitleme duraklatılmış olsa da) ya da Kalan Basic'te bu cihaz iCloud ile daha önce eşitlenmişse, senin iCloud hesabındaki Kalan verisi de silinir ve aynı hesapla eşitlenen diğer cihazlar silmeyi alır; diğer cihazların silmeyi ne zaman alacağı garanti edilmez. Bu işlem geri alınamaz.</li>
+<li><strong>"Tüm verilerimi sil"in kapsamadıkları:</strong> Kalan Basic'te bu cihaz iCloud ile hiç eşitlenmemişse ya da bu cihazda hiç iCloud hesabı kullanılmamışsa yalnızca bu cihazdaki veri silinir; iCloud'da ya da diğer cihazlarında duran veri silinmez. Diğer cihazlarında iCloud'a hiç taşınmamış kayıtlar da silinmez. Bu cihazda başka bir Apple Hesabıyla kullandığın Kalan verisi etkilenmez; onu silmek için o hesapla giriş yapıp işlemi orada yaparsın. Silme, Kalan Pro aboneliğini iptal etmez; abonelik Apple'dadır. Görünüm, dil, iCloud eşitleme anahtarı ve bildirim tercihleri gibi cihaz ayarları silmeden etkilenmez. Çökme raporları da kapsam dışıdır (aşağıya bak).</li>
+<li><strong>iCloud'a ulaşılamazsa:</strong> iCloud kopyasının da silinmesi gereken durumda iCloud'a ulaşılamıyorsa (ör. çevrimdışı ya da iCloud kapalıysa) silme başlamaz ve Kalan hiçbir şeyi "silindi" olarak göstermez. İşlem iCloud adımında yarım kalırsa Kalan neyin silinmediğini söyler ve yeniden denemeni sunar.</li>
+<li><strong>Uygulamayı kaldırırsan:</strong> Cihazdaki kopya silinir; iCloud'daki kopya kalır. iCloud'daki veriyi de silmek istiyorsan uygulamayı kaldırmadan önce "Tüm verilerimi sil"i kullan. iCloud depolamanı ayrıca iPhone'da Ayarlar &gt; [adın] &gt; iCloud bölümünden görebilirsin; ancak Kalan verisinin orada ayrı bir satır olarak görünüp silinebileceğini garanti etmiyoruz. iCloud kopyasını silmenin en güvenilir yolu uygulamadaki "Tüm verilerimi sil"dir.</li>
+<li><strong>Çökme raporları:</strong> Google'ın Firebase Crashlytics hizmetinde, uygulamanın kurulumuna özgü rastgele bir Firebase kurulum kimliğiyle ilişkili olarak saklanır; Google'ın belgesine göre 90 gün sonra silinme süreci başlar. "Tüm verilerimi sil" bu raporları ve kurulum kimliğini kapsamaz; raporlar finansal veri içermez. Geliştirici sana ait bir raporu bulamayabilir, çünkü raporlar seni adınla ya da hesabınla ilişkilendirmez.</li>
 <li><strong>Kur isteği:</strong> Geliştirici kur isteğindeki IP adresini saklamaz. Kalan, indirilen kurları cihazında önbellekte tutar; "Tüm verilerimi sil" bu önbelleği de siler.</li>
 <li><strong>Abonelik kayıtları:</strong> Apple'da tutulur ve Apple'ın politikasına tabidir.</li>
 </ul>
 
 <h2>7. Haklarını kullanma ve başvuru</h2>
-<p>Kişisel verilerine ilişkin olarak, yürürlükteki mevzuat uyarınca (KVKK m.11; AB/AEA'daysan GDPR m.15–22) şu haklara sahipsin:</p>
-<ul>
-<li>Verilerinin işlenip işlenmediğini öğrenme ve işlenmişse bilgi isteme,</li>
-<li>İşlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme,</li>
-<li>Yurt içinde ya da yurt dışında aktarıldığı üçüncü kişileri bilme,</li>
-<li>Eksik ya da yanlış işlenmişse düzeltilmesini isteme,</li>
-<li>Silinmesini ya da yok edilmesini isteme,</li>
-<li>İşlemeye itiraz etme; rızana dayanan işlemlerde rızanı geri çekme,</li>
-<li>AB/AEA'daysan verilerinin taşınmasını (taşınabilirlik) ve işlemenin sınırlandırılmasını isteme,</li>
-<li>Zarara uğraman hâlinde zararın giderilmesini talep etme.</li>
-</ul>
-<p>Kalan'ın finansal kayıtların geliştiricide bulunmadığı için bu kayıtlarla ilgili hakların çoğunu doğrudan uygulamadan kullanırsın: düzenle, sil ya da "Tüm verilerimi sil"i kullan. Diğer talepler için <a href="mailto:savranyagiz@gmail.com">savranyagiz@gmail.com</a> adresine yaz. Talebinde ne istediğini ve seni yanıtlayabileceğimiz e-posta adresini belirt; finansal tutar, hesap bilgisi ya da başka hassas veri gönderme. Başvurunu, niteliğine göre en geç 30 gün (KVKK m.13) içinde, GDPR kapsamında en geç bir ay içinde yanıtlarız. Kimliğini doğrulamak için ek bilgi isteyebiliriz.</p>
+<p>Senin hakkında tuttuğumuz kişisel veri yok; verilerini uygulamadan yönetir, "Tüm verilerimi sil" ile silersin. Soruların için <a href="mailto:savranyagiz@gmail.com">savranyagiz@gmail.com</a> adresine yazabilirsin; 30 gün içinde yanıt veririz. Yazarken finansal tutar, hesap bilgisi ya da başka hassas veri gönderme.</p>
+<p>KVKK m.11 ve AB/AEA'daysan GDPR kapsamında verilerine erişme, düzeltme, silme ve işlenmesine itiraz etme gibi haklara sahipsin; bu hakları aynı e-posta adresi üzerinden de kullanabilirsin. Çökme raporlarını kişiye göre bulamadığımız için bir raporu sana ait olarak ayıklayamayabiliriz.</p>
 <p>Yanıttan memnun kalmazsan Türkiye'de Kişisel Verileri Koruma Kurulu'na (<a href="https://www.kvkk.gov.tr">kvkk.gov.tr</a>), AB/AEA'da yerleşik olduğun ülkenin veri koruma otoritesine şikâyette bulunabilirsin.</p>
 
 <h2>8. Çocuklar</h2>
